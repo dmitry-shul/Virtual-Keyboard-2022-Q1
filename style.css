@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+:root {
+  --color-gold: #bdae82;
+  --color-black: #000;
+  --color-white: #fff;
+  --font1: 60px;
+  --font2: 40px;
+}
+
+body {
+  margin: 0 auto;
+  background: #3cad6b;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+/*----------------------------------------------------------------*/
+
+.container {
+  display: block;
+  width: 1000px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.textarea {
+  width: 100%;
+  max-width: 980px;
+  height: 280px;
+  margin: 0 auto;
+  border: none;
+  background: rgb(241, 241, 241);
+  border-radius: 8px;
+  padding: 20px;
+  font-size: 18px;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.keyboard {
+  width: 100%;
+  height: 340px;
+  margin: 20px 0 5px 0;
+  background: #606060;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.keyboard__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.keyboard__btn {
+  width: 56px;
+  height: 56px;
+  background: #404040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1s;
+}
+
+.keyboard__btn:hover {
+  background: #505050;
+}
+
+.keyboard__btn:active {
+  background: #282828;
+	transform: scale(0.92);
+}
+
+.key_isPress {
+	background: #282828;
+	transform: scale(0.92);
+}
+
+.keyboard__btn_active {
+  color: #3cad6b;
+}
+
+.hidden {
+  display: none;
+}
+
+.backspace,
+.enter,
+.shift,
+.caps_lock {
+  width: 120px;
+}
+
+.space {
+  width: 440px;
+}
+
+.ctrl,
+.alt,
+.language,
+.backspace,
+.enter,
+.shift,
+.caps_lock,
+.space,
+.del,
+.tab {
+  font-size: 16px;
+}
+
+.backspace {
+  font-size: 24px;
+}
+
+.info {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+	margin: 5px 0;
+}
+
